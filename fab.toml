@@ -1,0 +1,15 @@
+cflags = "-std=c99"
+
+[artifacts.pac]
+type = "executable"
+src = ["src/*.c"]
+
+[modes.debug]
+cflags = "-O0 -g"
+ldflags = "-lssl -lcrypto"
+
+[modes.release]
+cflags = "-O3 -march=native"
+
+[modes.test]
+cflags = "-O0 -g -DTEST"

@@ -1,0 +1,3 @@
+# pac
+
+A simple package manager for javascript.  Requires no dependencies other than openssl (libssl + libcrypto).
