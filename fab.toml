@@ -1,11 +1,11 @@
-cflags = "-std=c99"
+cflags = "-std=c99 -Wall -Werror"
 
 [artifacts.pac]
 type = "executable"
 src = ["src/*.c"]
 
 [modes.debug]
-cflags = "-O0 -g"
+cflags = "-O0 -g -DDEBUG"
 ldflags = "-lssl -lcrypto"
 
 [modes.release]
